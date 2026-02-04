@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>di_CentralUno · Particles Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Visual base só pra preview -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #050505;
+      color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: hidden;
+    }
+
+    /* área de teste */
+    .stage {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .card {
+      padding: 32px 40px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 0 40px rgba(0,255,255,0.08);
+      text-align: center;
+    }
+
+    .card h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      opacity: 0.9;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    /* 🎨 define cores das partículas via CSS */
+    :root {
+      --particles-colors: #0ff, #f0f, #7ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- container opcional (módulo também auto-injeta se não existir) -->
+  <div id="particles-js"></div>
+
+  <!-- conteúdo visual pra ver profundidade -->
+  <div class="stage">
+    <div class="card">
+      <h1>di_CentralUno</h1>
+      <p>Particles preview · módulo self-inject</p>
+    </div>
+  </div>
+
+  <!-- bootstrap -->
+  <script type="module">
+     import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-PaTKlz.js';
+
+    // init imediato só pra preview
+    di_initParticles({
+      di_target: 'particles-js',
+      di_config: {
+        particles: {
+          number: { value: 40 },
+          move: { speed: 1.5 }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
