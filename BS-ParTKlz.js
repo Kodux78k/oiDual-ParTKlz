@@ -1,4 +1,4 @@
-<!-- bootstrap -->
+ 
   <script type="module">
      import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-ParTKlz.js';
 
@@ -12,3 +12,4 @@
         }
       }
     });
+  </script>
