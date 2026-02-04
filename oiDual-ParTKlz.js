@@ -13,7 +13,7 @@ const DI_CSS = `
 #particles-js {
   position: absolute !important;
   inset: 0 !important;
-  z-index: 0 !important;
+  z-index: 780 !important;
   pointer-events: none !important;
 }
 `;
@@ -44,7 +44,7 @@ const DI_DEFAULT_CONFIG = {
     size: { value: 2.4 },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 144,
       color: '#ffffff',
       opacity: 0.2,
       width: 1
