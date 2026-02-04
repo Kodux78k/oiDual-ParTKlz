@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>di_CentralUno · Particles Preview</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="manifest" href="./manifest.json"> <meta name="theme-color" content="#000"> <link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="manifest" href="./manifest.json"> <meta name="theme-color" content="#2563eb"> <link rel="apple-touch-icon" href="./icon-192.png">
   <!-- Visual base só pra preview -->
   <style>
     html, body {
@@ -69,8 +69,7 @@
       <p>Particles preview · módulo self-inject</p>
     </div>
   </div>
-  
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
   <!-- bootstrap -->
   <script type="module">
      import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-ParTKlz.js';
@@ -80,8 +79,11 @@
       di_target: 'particles-js',
       di_config: {
         particles: {
-          number:{value:40},color:{value:['#0ff','#f0f']}, shape:{type:'circle'},opacity:{value:0.4},size:{value:2.4}, move:{enable:true,speed:1.5} }, retina_detect:true
-      });
+          number: { value: 40 },
+          move: { speed: 1.5 }
+        }
+      }
+    });
   </script>
 
 </body>
