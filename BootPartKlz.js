@@ -1,6 +1,6 @@
 <!-- bootstrap -->
   <script type="module">
-     import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-ParTKlz.js';
+     import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-ParTKlz-1.js';
 
     // init imediato só pra preview (override minimal)
 di_initParticles({
