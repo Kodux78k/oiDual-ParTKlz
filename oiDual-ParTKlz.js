@@ -37,16 +37,16 @@ const DI_COLOR_NAME_MAP = {
 // Default particles config baseline
 const DI_DEFAULT_CONFIG = {
   particles: {
-    number: { value: 40 },
+    number: { value: 24 },
     color: { value: DI_COLOR_NAME_MAP.neon.slice() },
     shape: { type: 'circle' },
-    opacity: { value: 0.4 },
+    opacity: { value: 0.8 },
     size: { value: 2.4 },
     line_linked: {
       enable: true,
       distance: 144,
       color: '#ffffff',
-      opacity: 0.2,
+      opacity: 0.6,
       width: 1
     },
     move: { enable: true, speed: 1.5 }
