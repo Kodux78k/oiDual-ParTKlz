@@ -46,7 +46,13 @@ const DI_DEFAULT_CONFIG = {
     opacity: { value: 0.4 },
     size: { value: 2.4 },
 
-    // sem line_linked (igual ao exemplo)
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: '#ffffff',
+      opacity: 0.3,
+      width: 1
+    },
     move: {
       enable: true,
       speed: 1.5
