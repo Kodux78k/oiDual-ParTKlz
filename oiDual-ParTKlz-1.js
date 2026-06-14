@@ -11,10 +11,10 @@ let DI_CURRENT_TARGET = null;
 const DI_CSS = `
 /* di particles module injected style */
 #particles-js {
-  position: absolute !important;
-  inset: 0 !important;
-  z-index: 780 !important;
-  pointer-events: none !important;
+  position: absolute ;
+  inset: 0 ;
+  z-index: 780 ;
+  pointer-events: none ;
 }
 `;
 
