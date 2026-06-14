@@ -37,30 +37,54 @@ const DI_COLOR_NAME_MAP = {
 // Default particles config — espelhado no particlesJS direto
 const DI_DEFAULT_CONFIG = {
   particles: {
-    number: { value: 40 },
-
-    // igual a: color:{value:['#0ff','#f0f']}
-    color: { value: ['#0ff', '#f0f'] },
-
-    shape: { type: 'circle' },
-    opacity: { value: 0.4 },
-    size: { value: 2.4 },
-
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#ffffff',
-      opacity: 0.3,
-      width: 1
+      number: {
+        value: 50,
+        density: { enable: true, value_area: 700 }
+      },
+      color: { value: ["#00ffff", "#ff00ff"] },
+      shape: { type: 'circle' },
+      opacity: { value: 0.78, random: true },
+      size: { value: 2, random: true },
+      // Configuração das linhas de conexão
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.74,
+        width: 2, // Aumentado para dar mais presença (original era 1)
+      },
+      move: {
+        enable: true,
+        speed: 1.39,
+        direction: "none",
+        random: true,
+        out_mode: "out",
+        straight: false,
+        attract: {
+          enable: true,
+          rotateX: 500,
+          rotateY: 1000,
+        }
+      }
     },
-    move: {
-      enable: true,
-      speed: 1.5
-    }
-  },
-
-  retina_detect: true
-};
+    // Configuração de Interação (Mouse/Toque)
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" }, // "Puxa" as linhas ao passar o mouse
+        onclick: { enable: true, mode: "push" }  // "Cria" novas partículas ao clicar
+      },
+      modes: {
+        grab: {
+          distance: 200,
+          line_linked: { opacity: 1 }
+        },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  }
+});
 
 // --- helpers ---
 function di_injectStyles(css = DI_CSS) {
