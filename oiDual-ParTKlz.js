@@ -47,7 +47,7 @@ const DI_DEFAULT_CONFIG = {
       distance: 144,
       color: '#ffffff',
       opacity: 0.6,
-      width: 1
+      width: 1,
     },
     move: { enable: true, speed: 1.5 }
   },
