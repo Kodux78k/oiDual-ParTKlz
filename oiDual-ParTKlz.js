@@ -13,8 +13,8 @@ const DI_CSS = `
 #particles-js {
   position: absolute !important;
   inset: 0 !important;
-  z-index: 780 !important;
-  pointer-events: none !important;
+  z-index: 0;
+  pointer-events: auto;
 }
 `;
 
